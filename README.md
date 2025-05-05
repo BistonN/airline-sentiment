@@ -16,8 +16,15 @@ To train a robust sentiment classification model (positive, neutral, negative) c
 - Scikit-learn
 - Pandas
 - Matplotlib / Seaborn
-
+  
 ---
 
-## 🗂 Project Structure
+## 📈 Model Performance
 
+Initial training achieved:
+- **Accuracy**: 84%
+- **F1-score (negative)**: 0.91
+- **F1-score (neutral)**: 0.69 → expected to improve with class reweighting
+- **F1-score (positive)**: 0.78
+
+After applying `class_weight` to penalize errors in minority classes, performance for underrepresented sentiments is expected to increase.
